@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="esercizio1"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-29 01:02:53 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC01VjhNVUk0OzIwMjUtMDktMjk7IjAxOjAxOjA0ICI7Mjc3Mg=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC01VjhNVUk0OzIwMjUtMDktMjk7IjAxOjAyOjUzICI7MTsyODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Determinare area e perimetro di un quadrato ricevendo in input la lunghezza del lato"/>
+            <declare name="l" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci lato: &quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;L'area e' &quot; &amp; (l*l)" newline="True"/>
+            <output expression="&quot;Il perimetro e' &quot; &amp; (l*4)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

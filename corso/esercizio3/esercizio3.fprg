@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="esercizio3"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-29 01:15:22 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC01VjhNVUk0OzIwMjUtMDktMjk7IjAxOjEyOjU5ICI7Mjc4NA=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC01VjhNVUk0OzIwMjUtMDktMjk7IjAxOjE1OjIyICI7MTsyODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Dato l'altezza e il raggio di base del cono determinare il volume"/>
+            <declare name="h, r, v" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserire l'altezza: &quot;" newline="True"/>
+            <input variable="h"/>
+            <output expression="&quot;Inserire il raggio: &quot;" newline="True"/>
+            <input variable="r"/>
+            <comment text="??"/>
+            <assign variable="v" expression="(1.0 / 3) * Math.PI * Math.pow(r, 2) * h"/>
+            <comment text="??"/>
+            <output expression="&quot;Il volume del cono &#232; &quot; &amp; v" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
