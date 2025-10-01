@@ -1,3 +1,5 @@
+package esercizio4;
+
 //Determinare area e perimetro di una circonferenza ricevendo in input la lunghezza del raggio
 
 import java.util.Scanner;
@@ -16,5 +18,7 @@ public class esercizio4 {
 
     System.out.println("Area: " + a);
     System.out.println("Perimetro: " + p);
+    
+    scanner.close(); //per evitare perdite di memoria
     }
 }

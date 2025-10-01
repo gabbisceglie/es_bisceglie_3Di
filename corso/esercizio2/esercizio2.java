@@ -1,4 +1,4 @@
-package corso;
+package esercizio2;
 
             //Determinare l’ipotenusa di un triangolo rettangolo sapendo la lunghezza dei cateti
 
@@ -23,10 +23,7 @@ public class esercizio2 {
 
     System.out.println("L'ipotenusa è " + ipo);
 
-
-
-
-
+    scanner.close(); //per evitare perdite di memoria
     }
 
 }

@@ -1,3 +1,5 @@
+package esercizio5;
+
 //Determinare area e perimetro di un rettangolo ricevendo in input base e altezza
 
 import java.util.Scanner;
@@ -19,5 +21,7 @@ public class esercizio5 {
 
         System.out.println("L'area del rettangolo e': " + area);
         System.out.println("Il perimetro del rettangolo e': " + perimetro);
+        
+        scanner.close(); //per evitare perdite di memoria
     }
 }

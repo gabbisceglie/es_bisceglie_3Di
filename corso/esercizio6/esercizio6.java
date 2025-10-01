@@ -23,5 +23,7 @@ public class esercizio6 {
         superficieTotale = areaBase + areaLaterale;
         
         System.out.println("La superficie totale del cilindro e': " + superficieTotale);
+        
+        scanner.close(); //per evitare perdite di memoria
     }
 }

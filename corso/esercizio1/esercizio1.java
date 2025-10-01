@@ -1,4 +1,4 @@
-package corso;
+package esercizio1;
 
 // Determinare area e perimetro di un quadrato ricevendo in input la lunghezza del lato
 
@@ -17,6 +17,8 @@ public class esercizio1 {
         // Operazioni varie
         System.out.println("L'area del quadrato è " + (l * l));
         System.out.println("Il perimetro del quadrato è " + (l * 4));
+
+        scanner.close(); //per evitare perdite di memoria
         
     }
 }

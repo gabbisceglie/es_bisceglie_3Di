@@ -1,4 +1,4 @@
-package corso.esercizio3;
+package esercizio3;
 
                         //Dato l'altezza e il raggio di base del cono determinare il volume
 
@@ -21,6 +21,8 @@ Scanner scanner = new Scanner(System.in);
     v = (1.0 / 3) * Math.PI * Math.pow(r, 2) * h;
 
         System.out.println("Il volume del cono è " + v);
+
+    scanner.close(); //Per evitaere perdite di memoria
 
     }
 }
