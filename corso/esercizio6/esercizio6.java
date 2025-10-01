@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class esercizio6 {
     
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
 
         double raggio, altezza, superficieTotale, areaBase, areaLaterale;

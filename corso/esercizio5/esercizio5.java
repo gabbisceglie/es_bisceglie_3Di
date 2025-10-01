@@ -5,6 +5,7 @@ package esercizio5;
 import java.util.Scanner;
 
 public class esercizio5 {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
 
         double base, altezza, area, perimetro;

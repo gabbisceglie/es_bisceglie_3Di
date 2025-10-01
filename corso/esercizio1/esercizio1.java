@@ -5,6 +5,7 @@ package esercizio1;
 import java.util.Scanner;
 
 public class esercizio1 {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main (String[] args) {
 
         int l;

@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class esercizio2 {
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
     
         
