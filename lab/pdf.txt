@@ -1,6 +1,0 @@
-Realizza i seguenti algoritmi in linguaggio Java ognuno su un progetto diverso.
-realizza anche Flowgorithm
-
-Dato il raggio del cerchio di base di un cilindro e la sua altezza, calcolare il peso
-del cilindro sapendo che la sostanza di cui è composto ha peso specifco = 3,40
-g/cm3 (Volume = area della base x altezza; Peso = Volume x Peso specifco).
