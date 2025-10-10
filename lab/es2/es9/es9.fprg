@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es9"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-09 06:24:07 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMDk7IjA2OjE3OjU1ICI7Mjc3Ng=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMDk7IjA2OjI0OjA3ICI7MTsyODc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Dato il raggio di una sfera, calcola il suo volume e la sua superficie.&#13;&#10;Formule utili:&#13;&#10;&#8226; Volume = (4/3) &#215; &#960; &#215; r&#179;&#13;&#10;&#8226; Superficie = 4 &#215; &#960; &#215; r&#178;&#13;&#10;"/>
+            <declare name="raggio, volume, superficie" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserire raggio: &quot;" newline="True"/>
+            <input variable="raggio"/>
+            <assign variable="volume" expression="(4.0/3.0) * pi * (raggio^3)"/>
+            <assign variable="superficie" expression="4.0 * pi * (raggio^2)"/>
+            <output expression="&quot;Volume: &quot; &amp; volume" newline="True"/>
+            <output expression="&quot;Superficie: &quot; &amp; superficie" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,19 @@
+Esercizi con Flowgorithm:
+
+Realizza anche il diagramma in Flowgorithm per:
+• Esercizio 11 (Conversione ore, minuti, secondi → secondi totali)
+• Esercizio 13 (Conversione giorni → anni, settimane, giorni)
+------------------------------------------------------------------------------------
+
+Esercizio 11:
+Ricevuto in input il tempo in ore, minuti e secondi, calcolare il totale in secondi.
+Esempio: 1 ora, 2 minuti e 10 secondi → 3730 secondi.
+ 
+Esercizio 12:
+Ricevuto in input il prezzo di un prodotto e l’aliquota IVA, calcolare:
+• Il valore dell’IVA
+• Il prezzo finale (imponibile + IVA)
+
+Esercizio 13:
+Dato in input il numero di giorni, calcola il corrispondente in anni, settimane e giorni
+(approssimando: 1 anno = 365 giorni, 1 settimana = 7 giorni).

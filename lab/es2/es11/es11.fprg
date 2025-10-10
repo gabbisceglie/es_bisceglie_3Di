@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es11"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-10 05:45:59 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMTA7IjA1OjQzOjMyICI7Mjc2MQ=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMTA7IjA1OjQ1OjU5ICI7MTsyODgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ore, min, sec, totale" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci ore: &quot;" newline="True"/>
+            <input variable="ore"/>
+            <output expression="&quot;Inserisci minuti: &quot;" newline="True"/>
+            <input variable="min"/>
+            <output expression="&quot;Inserisci secondi: &quot;" newline="True"/>
+            <assign variable="totale" expression="ore * 3600 + min * 60 + sec"/>
+            <output expression="&quot;Il tempo totale in secondi &#232; &quot; &amp; totale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
