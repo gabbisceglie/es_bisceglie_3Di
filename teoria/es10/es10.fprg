@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es10"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-16 03:51:40 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMTY7IjAzOjQ1OjEwICI7Mjc2Mw=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMTY7IjAzOjUxOjQwICI7MTsyODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, somma, n, i" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <do expression="numero&lt;=0">
+                <output expression="&quot;Inserisci un numero: &quot;" newline="True"/>
+                <input variable="numero"/>
+            </do>
+            <assign variable="i" expression="1"/>
+            <do expression="i&lt;(numero+1)">
+                <output expression="&quot;Inserisci il &quot; &amp; i &amp; &quot; numero su &quot; &amp; numero &amp; &quot;: &quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="n &gt; 0">
+                    <then>
+                        <assign variable="somma" expression="somma+n"/>
+                        <assign variable="i" expression="i+1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Per favore, inserisci solo numeri interi positivi.&quot;" newline="True"/>
+                        <assign variable="i" expression="i-1"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;La somma dei numeri inseriti &#232;: &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
