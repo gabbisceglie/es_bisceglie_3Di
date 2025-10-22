@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es11"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-22 05:19:56 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMjI7IjA0OjU5OjA1ICI7Mjc3MA=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMjI7IjA1OjE5OjU2ICI7NDsyODg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sommapari, prodottoDispari, i, numero" type="Integer" array="False" size=""/>
+            <assign variable="sommapari" expression="0"/>
+            <assign variable="prodottoDispari" expression="1"/>
+            <do expression="n &lt; 5 || n &gt; 10">
+                <output expression="&quot;Inserisci il numero di valori da inserire (tra 5 e 10): &quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Inserisci il numero &quot; &amp; (i + 1) &amp; &quot;: &quot;" newline="True"/>
+                <input variable="numero"/>
+                <if expression="numero%2==0">
+                    <then>
+                        <assign variable="sommapari" expression="sommapari+numero"/>
+                    </then>
+                    <else>
+                        <assign variable="prodottoDispari" expression="prodottoDispari*numero"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;La somma dei numeri pari &#232;: &quot; &amp; sommaPari" newline="True"/>
+            <output expression="&quot;Il prodotto dei numeri dispari &#232;: &quot; &amp; prodottoDispari" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
