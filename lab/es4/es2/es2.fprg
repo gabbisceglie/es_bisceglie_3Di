@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es2"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-28 05:39:57 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMjg7IjA1OjM0OjQwICI7Mjc2OQ=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTAtMjg7IjA1OjM5OjU3ICI7MTsyODkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroprodotti, i" type="Integer" array="False" size=""/>
+            <declare name="totalespesa" type="Real" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="totalespesa" expression="0"/>
+            <output expression="&quot;Inserire numero prodotti: &quot;" newline="True"/>
+            <input variable="numeroprodotti"/>
+            <for variable="i" start="1" end="i&lt;=numeroprodotti" direction="inc" step="1">
+                <output expression="&quot;Inserisci il prezzo del prodotto &quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+                <input variable="prezzoprodotto"/>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="totalespesa" expression="totalespesa+prezzoprodotto"/>
+            </for>
+            <output expression="&quot;La spesa totale &#232;: &quot; &amp; totaleSpesa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

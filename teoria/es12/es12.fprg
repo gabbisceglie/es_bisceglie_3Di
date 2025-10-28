@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="B1scegl1e"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-23 12:15:18 "/>
+        <attribute name="created" value="QjFzY2VnbDFlO0NVQi1NT0IxNzsyMDI1LTEwLTIzOyIxMjowNjoyOCAiOzI1Njk="/>
+        <attribute name="edited" value="QjFzY2VnbDFlO0NVQi1NT0IxNzsyMDI1LTEwLTIzOyIxMjoxNToxOCAiOzE7MjY3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="Integer" array="True" size="5"/>
+            <declare name="somma, i" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Inserisci un numero: &quot;" newline="True"/>
+                <input variable="array[i]"/>
+                <assign variable="somma" expression="somma+array[i]"/>
+            </for>
+            <assign variable="media" expression="somma / 5"/>
+            <output expression="&quot;La somma degli elementi &#232;: &quot; &amp; somma" newline="True"/>
+            <output expression="&quot;La media degli elementi &#232;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
