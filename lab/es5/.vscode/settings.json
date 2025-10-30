@@ -1,0 +1,17 @@
+{
+    "java.debug.settings.console": "externalTerminal", // options: internalConsole, integratedTerminal, externalTerminal
+    "java.debug.settings.showArgs": false,
+    "java.debug.settings.showCommandLine": false,
+    "java.debug.settings.vmArgs": "",
+    "java.debug.settings.enableHotCodeReplace": false,
+    "java.debug.logLevel": "error",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "terminal.integrated.showExitAlert": false,
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt && cls"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.saveAllFilesBeforeRun": true
+}

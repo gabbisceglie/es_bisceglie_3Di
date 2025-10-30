@@ -42,6 +42,8 @@ public class es1 {
         System.out.print("Inserisci l'importo del canone fisso: ");
         double canoneFisso = input.nextDouble();
 
+        input.close();
+
         // Calcolo del numero di scatti effettuati
 
     //non so come proseguire, con i calcoli
