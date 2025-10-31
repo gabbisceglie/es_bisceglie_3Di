@@ -1,5 +1,5 @@
 {
-    "java.debug.settings.console": "externalTerminal", // options: internalConsole, integratedTerminal, externalTerminal
+    "java.debug.settings.console": "integratedTerminal", // options: internalConsole, integratedTerminal, externalTerminal
     "java.debug.settings.showArgs": false,
     "java.debug.settings.showCommandLine": false,
     "java.debug.settings.vmArgs": "",
@@ -8,7 +8,7 @@
     "java.compile.nullAnalysis.mode": "disabled",
     "terminal.integrated.showExitAlert": false,
     "code-runner.executorMap": {
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt"
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt && clear"
     },
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,

@@ -45,21 +45,24 @@ public class es1 {
         input.close();
 
         // Calcolo del numero di scatti effettuati
+        int scattiEffettuati = scattiAttuali - scattiPrecedenti;
 
-    //non so come proseguire, con i calcoli
+        // Calcolo del costo della bolletta
+        double costoTotale;
+        if (scattiEffettuati > 1000) {
+            int scattiNormali = 1000;
+            int scattiEccedenti = scattiEffettuati - 1000;
+            costoTotale = (scattiNormali * costoScatto) + (scattiEccedenti * costoScatto * 2) + canoneFisso;
+        } else {
+            costoTotale = (scattiEffettuati * costoScatto) + canoneFisso;
+        }
 
+        // Output del risultato
+        System.out.println("\nBolletta per l'utente: " + nomeUtente);
+        System.out.println("Numero di scatti effettuati: " + scattiEffettuati);
+        System.out.printf("Importo totale della bolletta: %.2f\n", costoTotale);
 
-
-
-
-
-
-
-
-
-
-
-
+        input.close();
 
     }
 }
