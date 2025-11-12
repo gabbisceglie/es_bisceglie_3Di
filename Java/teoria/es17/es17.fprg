@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es17"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-12 06:27:25 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTEtMTI7IjA2OjEzOjUzICI7Mjc2NQ=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTEtMTI7IjA2OjI3OjI1ICI7MTsyODc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <call expression="legginumero(n)"/>
+            <declare name="arr" type="Integer" array="True" size="n"/>
+            <call expression="inserimentodati(n, arr)"/>
+            <declare name="somma" type="Integer" array="False" size=""/>
+            <call expression="calcolasomma(arr, n)"/>
+            <output expression="&quot;La somma dei numeri inseriti &#232;: &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+    <function name="calcolasomma" type="Integer" variable="somma">
+        <parameters>
+            <parameter name="somma" type="Integer" array="False"/>
+            <parameter name="arr" type="Integer" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <for variable="j" start="0" end="j&lt;n" direction="inc" step="1">
+                <assign variable="somma" expression="somma + arr[j]"/>
+            </for>
+        </body>
+    </function>
+    <function name="inserimentodati" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="arr" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="i&lt;n" direction="inc" step="1">
+                <comment text="*try catch*"/>
+                <output expression="&quot;Inserisci il numero &quot; &amp; (i + 1) &amp; &quot;: &quot;" newline="True"/>
+                <input variable="arr[i]"/>
+                <comment text="*try catch con messaggio di errore*"/>
+            </for>
+        </body>
+    </function>
+    <function name="legginumero" type="Integer" variable="n">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <comment text="*try catch*"/>
+            <output expression="&quot;Quanti numeri vuoi inserire?: &quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="*try catch con messaggio di errore*"/>
+        </body>
+    </function>
+</flowgorithm>
