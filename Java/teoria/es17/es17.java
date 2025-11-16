@@ -2,11 +2,6 @@ package es17;
 
 import java.util.Scanner;
 
-/*
-È inoltre richiesto di realizzare il diagramma di flusso che rappresenti la logica
-generale del programma e le principali fasi di elaborazione (lettura, calcolo e stampa).
- */
-
 public class es17 {
     public static void main(String[] args) {
 
