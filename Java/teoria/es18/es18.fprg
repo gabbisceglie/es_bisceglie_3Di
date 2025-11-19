@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="es18"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-19 05:38:47 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTEtMTk7IjA1OjA1OjI0ICI7Mjc3MA=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1FQ00yS0JKOzIwMjUtMTEtMTk7IjA1OjM4OjQ3ICI7MTsyODg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeri" type="Integer" array="True" size="legginumeri"/>
+            <declare name="risultato" type="Integer" array="True" size="trovaMassimo"/>
+            <declare name="stampaRisultato" type="Integer" array="False" size=""/>
+            <call expression="stampaRisultato(massimo, posizione)"/>
+        </body>
+    </function>
+    <function name="legginumeri" type="Integer" variable="numeri">
+        <parameters/>
+        <body>
+            <declare name="numeri, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quanti numeri vuoi inserire?: &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="numeri" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="i&lt;n" direction="inc" step="1">
+                <output expression="&quot;Inserisci il numero &quot; &amp; (i + 1) &amp; &quot;: &quot;" newline="True"/>
+                <input variable="numeri[i]"/>
+            </for>
+        </body>
+    </function>
+    <function name="stampaRisultato" type="None" variable="">
+        <parameters>
+            <parameter name="massimo" type="Integer" array="False"/>
+            <parameter name="posizione" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;Il valore massimo &#232;: &quot; &amp; massimo" newline="True"/>
+            <output expression="&quot;La sua posizione &#232;: &quot; &amp; posizione" newline="True"/>
+        </body>
+    </function>
+    <function name="trovaMassimo" type="Integer" variable="massimo, posizione">
+        <parameters>
+            <parameter name="numeri" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="massimo, posizione" type="Integer" array="False" size=""/>
+            <comment text="Integer.min_value"/>
+            <assign variable="massimo" expression="-2147483648"/>
+            <assign variable="posizione" expression="0"/>
+            <for variable="i" start="0" end="i&lt;" direction="inc" step="1">
+                <if expression="numeri[i] &gt; massimo">
+                    <then>
+                        <assign variable="massimo" expression="numeri[i]"/>
+                        <assign variable="posizione" expression="i+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
