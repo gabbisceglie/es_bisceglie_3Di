@@ -1,4 +1,4 @@
-package teoria;
+package es19;
 
 import java.util.Scanner;
 
@@ -14,11 +14,9 @@ public class es19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int n;
-        int[] array = new int[n];
-
         System.out.print("Inserisci il numero di elementi da memorizzare: ");
-        n = scanner.nextInt();
+        int n = scanner.nextInt();
+        int[] array = new int[n];
 
         System.out.println("Inserisci " + n + " numeri interi in ordine crescente:");
         for (int i = 0; i < n; i++) {
@@ -28,7 +26,7 @@ public class es19 {
         System.out.print("Inserisci il numero da cercare: ");
         int cercaN = scanner.nextInt();
 
-        int risultato = binarySearch(array, cercaN);
+        int risultato = ricerca(array, cercaN);
 
         if (risultato != -1) {
             System.out.println("Numero trovato nella posizione " + risultato);
@@ -37,5 +35,27 @@ public class es19 {
         }
 
         scanner.close();
+    }
+
+//metodo per la ricerca binaria
+    public static int ricerca(int[] array, int cercaN) {
+        int sinistra = 0;
+        int destra = (array.length -1);
+
+        while (sinistra <= destra) {
+            int medio = (sinistra + (destra - sinistra) / 2);
+
+            if (array[medio] == cercaN) {
+                return medio; //Numero trovato
+            }
+
+            if (array[medio] < cercaN) {
+                sinistra = medio + 1; //Cerca nella metà destra
+            } else {
+                destra = medio - 1; //Cerca nella metà sinistra
+            }
+        }
+
+        return -1; // Numero non trovato
     }
 }
