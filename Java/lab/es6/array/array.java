@@ -8,7 +8,7 @@ public class array {
         int scelta=0,cerca=0,trovato=-1;
         int array[]=new int[100];
         
-        Scanner tastiera = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         do{
             System.out.println("1: Carica vettore");
             System.out.println("2: Stampa vettore");
@@ -16,31 +16,38 @@ public class array {
             System.out.println("4: Ricerca sequenziale vettore");
             System.out.println("5: Ricerca binaria vettore ordinato"); //ricerca binaria in un vettore ordinato
             System.out.println("0: Esci");
-            scelta=tastiera.nextInt();
+            scelta=scanner.nextInt();
+
             switch(scelta){
                 case 1:
                     caricaArray(array); //La chiamata al metodo carica
                     break;
+
                 case 2:
                     stampaArray(array); //La chiamata al metodo stampa
                     break;
+
                 case 3:
                     ordinaArray(array); //La chiamata al metodo ordina
                     break;
+
                 case 4:
 					System.out.println("Inserisci il valore da ricercare");
-					cerca=tastiera.nextInt();
+					cerca=scanner.nextInt();
+
 					trovato=cercaArray(array,cerca);
+
 					if(trovato>=0){
-		System.out.println("Valore cercato ritrovato alla posizione " + trovato);
+		    System.out.println("Valore cercato ritrovato alla posizione " + trovato);
 						
 						}else{
-		System.out.println("Valore non trovato");					
+		    System.out.println("Valore non trovato");					
 							}
 					break;
+
                 case 5:
                     System.out.println("Inserisci il valore da ricercare");
-                    cerca=tastiera.nextInt();
+                    cerca=scanner.nextInt();
                     int inizio=0;
                     int fine=array.length-1;
                     trovato=-1;
@@ -61,15 +68,17 @@ public class array {
                         System.out.println("Valore non trovato");
                     }
                     break;
+
                 case 0:
                     System.exit(0);
                     break;
+
                 default:
                     System.out.println("Scelta non valida");
             }
         }while(scelta!=0);
         
-        tastiera.close();
+        scanner.close();
 
     }//Fine Main
     
