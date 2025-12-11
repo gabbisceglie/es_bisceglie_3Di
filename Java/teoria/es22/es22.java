@@ -32,7 +32,7 @@ public class es22 {
 
         // Stampa l'array ordinato
         System.out.println("Array ordinato:");
-        for (int i = 0; i < n; i++) {
+        for (int i=0; i < n; i++) {
             System.out.println("Elemento " + (i + 1) + ": " + arr[i]);
         }
 
@@ -41,7 +41,7 @@ public class es22 {
 
     //metodo per caricare l'array
     public static void caricaArray(Scanner scanner, int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i=0; i < arr.length; i++) {
             System.out.print("Inserisci l'elemento " + (i + 1) + ": ");
             arr[i] = scanner.nextInt();
         }
@@ -50,10 +50,10 @@ public class es22 {
     //metodo per ordinare l'array con Selection Sort
     public static void selectionSort(int[] arr) {
         int n = arr.length;
-        for (int i = 0; i < n - 1; i++)
+        for (int i=0; i < n - 1; i++)
         {
             int minimo = i;
-            for (int j = i + 1; j < n; j++) {
+            for (int j=i+1; j<n; j++) {
                 if (arr[j] < arr[minimo]) {
                     minimo = j;
                 }
