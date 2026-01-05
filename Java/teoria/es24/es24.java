@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class es1 {
+public class es24 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
