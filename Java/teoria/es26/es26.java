@@ -35,7 +35,6 @@ public class es26 {
 
     //metodo per stampare l'array
     public static void stampaArray(int[][] arr) {
-
         System.out.println();
         System.out.println("Array:");
         for (int i = 0; i < arr.length; i++) {
