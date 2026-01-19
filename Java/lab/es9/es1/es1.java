@@ -1,3 +1,5 @@
+package es1;
+
 import java.util.Scanner;
 
 public class es1 {
