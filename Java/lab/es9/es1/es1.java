@@ -9,7 +9,7 @@ public class es1 {
     int n;
 
     do{
-        System.out.print("Inserisci un numero: ");
+        System.out.print("Inserisci lunghezza array: ");
         n = scanner.nextInt();
     }while(n<0);
 
@@ -20,14 +20,8 @@ public class es1 {
     System.out.println("Array riempito:");
     stampaArray(arr);
 
-    System.out.println("Array ruotato in avanti:");
+    System.out.print("Ordine dell'array:");
     ruotaArray(arr);
-    stampaArray(arr);
-
-
-
-
-
 
         scanner.close();
     }
@@ -47,14 +41,27 @@ public class es1 {
         System.out.println();
     }
 
-    //metodo per ruotare l'array in avanti
+    //metodo per controllare se l'array è crescente, decrescente o né l'uno né l'altro, e stampa il risultato
     public static void ruotaArray(int arr[]){
-        if(arr.length == 0) return; // Gestione caso array vuoto
+        boolean crescente = true;
+        boolean decrescente = true;
 
-        int ultimo = arr[arr.length - 1];
-        for(int i=arr.length - 1; i>0; i--){
-            arr[i] = arr[i - 1];
+        for(int i=0; i<arr.length-1; i++){
+            if(arr[i] < arr[i+1]){
+                decrescente = false;
+            } else if(arr[i] > arr[i+1]){
+                crescente = false;
+            }
         }
-        arr[0] = ultimo;
+
+        //stampa il risultato
+        if(crescente){
+            System.out.print(" Crescente");
+        } else if(decrescente){
+            System.out.print(" Decrescente");
+        } else {
+            System.out.print(" Né crescente né decrescente");
+        }
     }
+    
 }
