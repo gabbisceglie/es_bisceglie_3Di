@@ -1,5 +1,3 @@
-package es2;
-
 import java.util.Scanner;
 
 import es2.Automobile;
@@ -35,11 +33,13 @@ public class EsAutomobile {
 
         System.out.print("Inserisci Kw: ");
         int Kw = scanner.nextInt();
-        automobile4.setKilometri(Kw);
+        automobile4.setKilowatt(Kw);
 
         System.out.print("Inserisci cavalli: ");
         int cavalli = scanner.nextInt();
-        automobile4.setKilometri(cavalli);
+        automobile4.setCavalli(cavalli);
+
+        scanner.nextLine(); // consume endline after numeric input
 
         System.out.print("Inserisci colore: ");
         String colore = scanner.nextLine();
@@ -47,7 +47,7 @@ public class EsAutomobile {
 
         System.out.print("Inserisci alimentazione: ");
         String alimentazione = scanner.nextLine();
-        automobile4.setColore(alimentazione);
+        automobile4.setAlimentazionePrimaria(alimentazione);
 
         System.out.print("L'auto è elettrica? ");
         boolean elettrica = scanner.nextBoolean();
@@ -65,36 +65,62 @@ public class EsAutomobile {
         double prezzo = scanner.nextDouble();
         automobile4.setPrezzo(prezzo);
 
+        scanner.nextLine(); // consume endline after numeric input
+
         System.out.println("Inserire la città: ");
         String paese = scanner.nextLine();
         automobile4.setPaese(paese);
 
         //Stampare modello, marca e kilometri di tutte le quattro auto;
-        System.out.print(automobile1.getModello());
-        System.out.print(automobile1.getKilometri());
+        System.out.println(automobile1.getModello());
+        System.out.println(automobile1.getKilometri());
 
-        System.out.print(automobile2.getModello());
-        System.out.print(automobile2.getKilometri());
+        System.out.println("--------------------------------------------------");
 
-        System.out.print(automobile3.getModello());
-        System.out.print(automobile3.getKilometri());
+        System.out.println(automobile2.getModello());
+        System.out.println(automobile2.getKilometri());
 
-        System.out.print(automobile4.getModello());
-        System.out.print(automobile4.getKilometri());
+        System.out.println("--------------------------------------------------");
+
+        System.out.println(automobile3.getModello());
+        System.out.println(automobile3.getKilometri());
+
+        System.out.println("--------------------------------------------------");
+
+        System.out.println(automobile4.getModello());
+        System.out.println(automobile4.getKilometri());
+
+        System.out.println("--------------------------------------------------");
 
         /*Stampare modello, marca e colore dell’auto con il prezzo più basso, facendo i confronti dei prezzi
         delle quattro auto (e non stampando a mano la quarta perché vediamo che è quella con il prezzo
         più basso), usando il metodo getPrezzo; */
+        if (automobile1.getPrezzo() < automobile2.getPrezzo() && automobile1.getPrezzo() < automobile3.getPrezzo() && automobile1.getPrezzo() < automobile4.getPrezzo()) {
+            System.out.println("L'auto più economica è: " + automobile1.getMarca() + " " + automobile1.getModello() + " di colore " + automobile1.getColore());
+        } else if (automobile2.getPrezzo() < automobile1.getPrezzo() && automobile2.getPrezzo() < automobile3.getPrezzo() && automobile2.getPrezzo() < automobile4.getPrezzo()) {
+            System.out.println("L'auto più economica è: " + automobile2.getMarca() + " " + automobile2.getModello() + " di colore " + automobile2.getColore());
+        } else if (automobile3.getPrezzo() < automobile1.getPrezzo() && automobile3.getPrezzo() < automobile2.getPrezzo() && automobile3.getPrezzo() < automobile4.getPrezzo()) {
+            System.out.println("L'auto più economica è: " + automobile3.getMarca() + " " + automobile3.getModello() + " di colore " + automobile3.getColore());
+        } else {
+            System.out.println("L'auto più economica è: " + automobile4.getMarca() + " " + automobile4.getModello() + " di colore " + automobile4.getColore());
+        }
+
+        //Stampare modello, marca e anno delle auto con più di 50mila kilometri e meno di 200mila kilometri
+        if (automobile1.getKilometri() > 50000 && automobile1.getKilometri() < 200000) {
+            System.out.println("Auto con più di 50mila km e meno di 200mila km: " + automobile1.getMarca() + " " + automobile1.getModello() + " anno " + automobile1.getAnno());
+        }
+        if (automobile2.getKilometri() > 50000 && automobile2.getKilometri() < 200000) {
+            System.out.println("Auto con più di 50mila km e meno di 200mila km: " + automobile2.getMarca() + " " + automobile2.getModello() + " anno " + automobile2.getAnno());
+        }
+        if (automobile3.getKilometri() > 50000 && automobile3.getKilometri() < 200000) {
+            System.out.println("Auto con più di 50mila km e meno di 200mila km: " + automobile3.getMarca() + " " + automobile3.getModello() + " anno " + automobile3.getAnno());
+        }
+        if (automobile4.getKilometri() > 50000 && automobile4.getKilometri() < 200000) {
+            System.out.println("Auto con più di 50mila km e meno di 200mila km: " + automobile4.getMarca() + " " + automobile4.getModello() + " anno " + automobile4.getAnno());
+        }
 
 
-
-
-
-
-
-
-
-
+        //Chiudere la tastiera
         scanner.close();
     }
 }

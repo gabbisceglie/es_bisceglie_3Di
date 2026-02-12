@@ -1,5 +1,4 @@
 package es2;
-
 public class Automobile {
     
     //ATTRIBUTI (O VARIABILI DI ISTANZA):
@@ -93,14 +92,6 @@ public class Automobile {
         this.alimentazionePrimaria = alimentazionePrimaria;
     }
 
-    public void setMese(int mese) {
-        this.mese = mese;
-    }
-
-    public void setAnno(int anno) {
-        this.anno = anno;
-    }
-
     public boolean isElettrica() {
         return elettrica;
     }
@@ -109,7 +100,21 @@ public class Automobile {
         this.elettrica = elettrica;
     }
 
-    // INSERISCI QUI I GET E I SET DI ANNO E MESE
+    public int getAnno() {
+        return anno;
+    }
+
+    public void setAnno(int anno) {
+        this.anno = anno;
+    }
+
+    public int getMese() {
+        return mese;
+    }
+
+    public void setMese(int mese) {
+        this.mese = mese;
+    }
 
     public double getPrezzo() {
         return prezzo;
