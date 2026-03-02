@@ -119,7 +119,6 @@ public class EsAutomobile {
             System.out.println("Auto con più di 50mila km e meno di 200mila km: " + automobile4.getMarca() + " " + automobile4.getModello() + " anno " + automobile4.getAnno());
         }
 
-
         //Chiudere la tastiera
         scanner.close();
     }

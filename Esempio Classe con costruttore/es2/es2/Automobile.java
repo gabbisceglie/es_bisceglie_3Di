@@ -131,6 +131,4 @@ public class Automobile {
     public void setPaese(String paese) {
         this.paese = paese;
     }
-    
-    
 }
