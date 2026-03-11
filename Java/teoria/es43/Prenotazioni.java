@@ -9,7 +9,6 @@ public class Prenotazioni {
     private boolean servizioMinibar;
 
     public Prenotazioni() {
-        // Costruttore di default
     }
 
     public String getCodicePrenotazione() {
